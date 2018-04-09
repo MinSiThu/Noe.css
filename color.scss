@@ -1,0 +1,48 @@
+$danger : #DC3545;
+$primary : #007BFF;
+$secondary : #6C757D;
+$info : #17A2B8;
+$success : #28A745;
+$warning : #FFC107;
+$dark : #343A40;
+$light: #F8F8F8;
+
+@mixin Background($background,$color) {
+  background-color: $background!important;
+  color : $color;
+}
+
+.noe-danger,.noe-hover-danger:hover{@include Background($danger,$light);}
+.noe-warning,.noe-hover-warning:hover{@include Background($warning,$light);}
+.noe-primary,.noe-hover-primary:hover{@include Background($primary,$light);}
+.noe-secondary,.noe-hover-secondary:hover{@include Background($secondary,$light);}
+.noe-success,.noe-hover-success:hover{@include Background($success,$light);}
+.noe-info,.noe-hover-info:hover{@include Background($info,$light);}
+.noe-dark,.noe-hover-dark{@include Background($dark,$light);}
+.noe-light,.noe-hover-light{@include Background($light,$dark);}
+
+@mixin Text($color) {
+  color: $color!important;
+}
+
+.noe-text-danger,.noe-hover-text-danger:hover{@include Text($danger);}
+.noe-text-warning,.noe-hover-text-warning:hover{@include Text($warning);}
+.noe-text-primary,.noe-hover-text-primary:hover{@include Text($primary);}
+.noe-text-secondary,.noe-hover-text-secondary:hover{@include Text($secondary);}
+.noe-text-success,.noe-hover-text-success:hover{@include Text($success);}
+.noe-text-info,.noe-hover-text-info:hover{@include Text($info);}
+.noe-text-dark,.noe-hover-text-dark:hover{@include Text($dark);}
+.noe-text-light,.noe-hover-text-light:hover{@include Text($light);}
+
+@mixin Border($color) {
+  border : $color 2px solid!important;
+}
+
+.noe-border-danger,.noe-hover-border-danger:hover{@include Border($danger);}
+.noe-border-warning,.noe-hover-border-warning:hover{@include Border($warning);}
+.noe-border-primary,.noe-hover-border-primary:hover{@include Border($primary);}
+.noe-border-secondary,.noe-hover-border-secondary:hover{@include Border($secondary);}
+.noe-border-success,.noe-hover-border-success:hover{@include Border($success);}
+.noe-border-info,.noe-hover-border-info:hover{@include Border($info);}
+.noe-border-dark,.noe-hover-border-dark:hover{@include Border($dark);}
+.noe-border-light,.noe-hover-border-light:hover{@include Border($light);}

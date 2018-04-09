@@ -1,0 +1,67 @@
+//btn,btn-large,btn-small,btn-block
+@import "setting";
+@import "layout";
+
+@mixin Btn($fontSize,$padding1,$padding2){
+    border: none;
+    text-decoration: none;
+    display: inline-block;
+    padding: $padding1 $padding2;
+    border-radius: 4px;
+    font-size: $fontSize;
+    background-color: inherit;
+    color: inherit;
+}
+
+.noe-btn-group{
+  @extend .row;
+  padding: 0px;
+  margin:0px;
+  border-radius: 5px;
+  .noe-btn{
+    float : left;
+    @extend .noe-btn;
+    border-radius:0!important;
+  }
+}
+
+.noe-btn-group-lg{
+  @extend .row;
+  padding: 0px;
+  margin:0px;
+  border-radius: 5px;
+  .noe-btn{
+    float : left;
+    @extend .noe-btn-lg;
+    border-radius:0!important;
+  }
+}
+
+.noe-btn-group-sm{
+  @extend .row;
+  padding: 0px;
+  margin:0px;
+  border-radius: 5px;
+  .noe-btn{
+    float : left;
+    @extend .noe-btn-sm;
+    border-radius:0!important;
+  }
+}
+
+.noe-btn{
+  @include Btn(1.25em,0.25em,0.5em);
+}
+
+.noe-btn-lg{
+  @include Btn(1.5em,0.25em,0.4em);
+}
+
+.noe-btn-sm{
+  @include Btn(1em,0.25em,0.25em);
+}
+
+.noe-btn-block{
+    width : 100%;
+    display: block!important;
+}

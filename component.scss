@@ -1,0 +1,69 @@
+//tag,tag-pill
+@import "color";
+@import 'setting';
+@import "button";
+
+@mixin NavItem($fontSize) {
+  border: none;
+  @extend .noe-padding;
+  text-decoration: none;
+  font-size: $fontSize;
+  display: inline-block;
+  float :none;
+  color:black;
+}
+
+.noe-nav{
+  width : 99%;
+  display: block;
+  .noe-nav-brand{
+      @include NavItem(24px);
+  }
+  .noe-nav-item{
+    @include NavItem(18px);
+  }
+}
+
+
+.noe-tag{
+  display: inline-block;
+  font-size: 0.8em;
+  @extend .noe-text-center;
+  border-radius: 4px;
+  padding:3px 12px;
+  font-weight: bold;
+  background-color: $dark;
+  color : $light;
+}
+
+.noe-alert{
+  display: block;
+  opacity: 0.9;
+  border-radius : 4px;
+  padding: 0.75em;
+  font-size: 1em;
+  font-weight: bold;
+  background: $light;
+  color: $dark;
+}
+
+.noe-card{
+  @extend .noe-margin;
+  border-radius: 4px;
+  .noe-card-header{
+      font-size: 32px;
+      background-color: inherit;
+      border-bottom: 1px solid $dark;
+      @extend .noe-padding;
+  }
+  .noe-card-body{
+    @extend .noe-padding;
+    background-color: inherit;
+    .noe-card-title{
+      font-size: 24px;
+    }
+    .noe-card-body-text{
+      font-size: 19px;
+    }
+  }
+}

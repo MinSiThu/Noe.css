@@ -1,0 +1,102 @@
+$col1:8.33333%;$col2:16.66666%;$col3:24.99999%;
+$col4:33.33333%;$col5:41.66666%;$col6:49.99999%;
+$col7:58.33333%;$col8:66.66666%;$col9:74.99999%;
+$col10:83.33333%;$col11:91.66666%;$col12:99.99999%;
+
+.container{display: block;
+  .row{display: block;width:100%;clear: both;}
+}
+
+@mixin col($width) {
+  float: left;
+  width: $width;
+}
+
+
+@media (max-width:599px) {
+  .col1{@include col($col1);}
+  .col2{@include col($col2);}
+  .col3{@include col($col3);}
+  .col4{@include col($col4);}
+  .col5{@include col($col5);}
+  .col6{@include col($col6);}
+  .col7{@include col($col7);}
+  .col8{@include col($col8);}
+  .col9{@include col($col9);}
+  .col10{@include col($col10);}
+  .col11{@include col($col11);}
+  .col12{@include col($col12);}
+
+  .s1{@extend .col1;}
+  .s2{@extend .col2;}
+  .s3{@extend .col3;}
+  .s4{@extend .col4;}
+  .s5{@extend .col5;}
+  .s6{@extend .col6;}
+  .s7{@extend .col7;}
+  .s8{@extend .col8;}
+  .s9{@extend .col9;}
+  .s10{@extend .col10;}
+  .s11{@extend .col11;}
+  .s12{@extend .col12;}
+}
+
+@media (min-width:601px) {
+  .m1{@extend .mcol1;}
+  .m2{@extend .mcol2;}
+  .m3{@extend .mcol3;}
+  .m4{@extend .mcol4;}
+  .m5{@extend .mcol5;}
+  .m6{@extend .mcol6;}
+  .m7{@extend .mcol7;}
+  .m8{@extend .mcol8;}
+  .m9{@extend .mcol9;}
+  .m10{@extend .mcol10;}
+  .m11{@extend .mcol11;}
+  .m12{@extend .mcol12;}
+
+  .mcol1{@include col($col1);}
+  .mcol2{@include col($col2);}
+  .mcol3{@include col($col3);}
+  .mcol4{@include col($col4);}
+  .mcol5{@include col($col5);}
+  .mcol6{@include col($col6);}
+  .mcol7{@include col($col7);}
+  .mcol8{@include col($col8);}
+  .mcol9{@include col($col9);}
+  .mcol10{@include col($col10);}
+  .mcol11{@include col($col11);}
+  .mcol12{@include col($col12);}
+}
+
+@media (min-width:993px) {
+  .m1{@extend .lcol1;}
+  .m2{@extend .lcol2;}
+  .m3{@extend .lcol3;}
+  .m4{@extend .lcol4;}
+  .m5{@extend .lcol5;}
+  .m6{@extend .lcol6;}
+  .m7{@extend .lcol7;}
+  .m8{@extend .lcol8;}
+  .m9{@extend .lcol9;}
+  .m10{@extend .lcol10;}
+  .m11{@extend .lcol11;}
+  .m12{@extend .lcol12;}
+
+  .lcol1{@include col($col1);}
+  .lcol2{@include col($col2);}
+  .lcol3{@include col($col3);}
+  .lcol4{@include col($col4);}
+  .lcol5{@include col($col5);}
+  .lcol6{@include col($col6);}
+  .lcol7{@include col($col7);}
+  .lcol8{@include col($col8);}
+  .lcol9{@include col($col9);}
+  .lcol10{@include col($col10);}
+  .lcol11{@include col($col11);}
+  .lcol12{@include col($col12);}
+}
+
+@media (max-width:600px) {
+  .noe-mobile{width: 99.99%;}
+}

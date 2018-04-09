@@ -1,0 +1,38 @@
+@mixin Text-Align($position) {
+  text-align: $position!important;
+}
+
+.noe-text-center{@include Text-Align(center);}
+.noe-text-left{@include Text-Align(left);}
+.noe-text-right{@include Text-Align(right);}
+
+@mixin Position($top,$left,$bottom,$right) {
+  position: absolute;
+  top : $top;
+  left : $left;
+  bottom: $bottom;
+  right : $right;
+}
+
+.noe-topleft{@include Position(0,0,undefined,undefined);}
+.noe-topright{@include Position(0,undefined,0,undefined);}
+.noe-topmiddle{@include Position(0,50%,undefined,undefined)transform:translate(-50%,0%);-ms-transform:translate(-50%,0%);}
+
+.noe-bottomleft{@include Position(undefined,0,0,undefined);}
+.noe-bottomright{@include Position(undefined,undefined,0,0);}
+.noe-bottommiddle{@include Position(undefined,50%,0,undefined);transform:translate(-50%,0%);-ms-transform:translate(-50%,0%);}
+
+@mixin Padding($top,$left) {
+  padding: $top $left;
+}
+
+.noe-padding{@include Padding(8px,16px);}
+.noe-padding-small{@include Padding(4px,8px);}
+
+
+.noe-margin{margin: 16px!important;}
+.noe-margin-top{margin-top: 16px!important;}
+
+.noe-clear{clear:both!important;}
+.noe-left{float: left;}
+.noe-justify{}

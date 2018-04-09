@@ -1,0 +1,34 @@
+//code,pre,samp,var,kbd
+
+@import "color";
+@import "button";
+
+.code{
+  font-size: 14px;
+  font-family: monospace;
+}
+
+code{
+  @extend .code;
+  @extend .noe-text-info;
+}
+
+pre{
+  @extend .noe-dark;
+  code{
+    @extend .code;
+    @extend .noe-text-light;
+  }
+}
+
+kbd{
+  @extend .code;
+  @extend .noe-info;
+  @extend .noe-btn-sm;
+}
+
+samp{
+    @extend .code;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+}
