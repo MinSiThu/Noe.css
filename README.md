@@ -12,3 +12,5 @@ For front-end developer who would use **Noe.css** will have to download only Noe
 Other Scss files are meant for contributors and those who wolud like to give feedbacks upon codes.
 
 **Hope for some feedbacks after using the framework**
+
+![Noe.css logo](https://github.com/MinSiThu/Noe.css/blob/NoeCSS/Noe%20logo.jpg)
