@@ -35,25 +35,23 @@ Like Bootstrap, `lcol` is for screen with **min-width:993px**,
                 `col` is for screen with **max-width:559px**
 And `noe-mobile` is for 100% width in **mobile - max-width:559px**.
 Example;
-`
-  <div class='container'>
+`<div class='container'>
       <div class='row'>
         <div class='noe-mobile mcol6 lcol6'>Col 1</div>
         <div class='noe-mobile mcol6 lcol6'>Col 2</div>
       </div>
-  </div>
-`
+  </div>`
 
 For **background-color** , you have to use `noe-danger` class.
-eg; `noe-danger , noe-warning`
+eg; `noe-danger` , `noe-warning`
 Moreover, *changing background-color on hovering text* , you have to use `noe-hover-text-success` class.
-eg; `noe-hover-danger , noe-hover-secondary`
+eg; `noe-hover-danger` , `noe-hover-secondary`
 
 
 For **text color** , you have to use `noe-text-info` class.
 eg; `noe-text-success , noe-text-primary`
 Moreover, *changing color on hovering text* , you have to use `noe-hover-text-success` class.
-eg; `noe-hover-text-danger , noe-hover-text-secondary`
+eg; `noe-hover-text-danger` , `noe-hover-text-secondary`
 
 Just like background-colors and text-colors,
 **border style** can be set with `noe-border-info` and `noe-hover-border-success`.
@@ -65,17 +63,16 @@ For **code-style** on Noe.css , you can use `<code>` for single-line code.
 For **button** , `noe-btn, noe-btn-lg, noe-btn-sm` class are available.
 `noe-btn-block` is for block-level button.
 There is also `noe-btn-group, noe-btn-group-lg, noe-btn-group-sm` for button-groups.
-`
-<div class='noe-btn-group noe-info'>
+`<div class='noe-btn-group noe-info'>
   <button class='noe-btn'>JavaScript</button>
   <button class='noe-btn'>Perl</button>
   <button class='noe-btn'>XML</button>
-</div>
-`
+</div>`
+
 Since **Padding and Margin** are not set in Noe.css, there are setting classes in Noe.css.
-`noe-padding,noe-padding-small` are for padding.
-`noe-text-center,noe-text-left` and `noe-text-right` for text-align.
-`noe-topleft,noe-topright,noe-topmiddle`and `noe-bottomleft,noe-bottomright,noe-bottommiddle` 
+`noe-padding`,`noe-padding-small` are for padding.
+`noe-text-center`,`noe-text-left` and `noe-text-right` for text-align.
+`noe-topleft`,`noe-topright`,`noe-topmiddle`and `noe-bottomleft`,`noe-bottomright`,`noe-bottommiddle` 
 are setting position of elements.
 
 For **form**, check the example below;
@@ -101,15 +98,13 @@ For **form**, check the example below;
 
 # *Card*
 
-`
-<div class="noe-card noe-success">
+`<div class="noe-card noe-success">
   <div class="noe-card-header">Header</div>
   <div class="moe-card-body">
       <p>This is card body</p>
       <button class="noe-btn noe-primary">Like</button>
   </div>
-</div>
-`
+</div>`
 
 # *Alert*
 
