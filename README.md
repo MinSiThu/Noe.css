@@ -29,7 +29,7 @@ There are 8 basic colors in Noe.css.
 * Dark
 * Light
 
-For *Responsive*, Noe.css has grids system.
+For **Responsive**, Noe.css has grids system.
 Like Bootstrap, `lcol` is for screen with **min-width:993px**,
                 `mcol` is for screen with **min-width:601px**
                 `col` is for screen with **max-width:559px**
@@ -44,25 +44,25 @@ Example;
   </div>
 `
 
-For *background-color* , you have to use `noe-danger` class.
+For **background-color** , you have to use `noe-danger` class.
 eg; `noe-danger , noe-warning`
 Moreover, *changing background-color on hovering text* , you have to use `noe-hover-text-success` class.
 eg; `noe-hover-danger , noe-hover-secondary`
 
 
-For *text color* , you have to use `noe-text-info` class.
+For **text color** , you have to use `noe-text-info` class.
 eg; `noe-text-success , noe-text-primary`
 Moreover, *changing color on hovering text* , you have to use `noe-hover-text-success` class.
 eg; `noe-hover-text-danger , noe-hover-text-secondary`
 
 Just like background-colors and text-colors,
-*border style* can be set with `noe-border-info` and `noe-hover-border-success`.
+**border style** can be set with `noe-border-info` and `noe-hover-border-success`.
 
-For *code-style* on Noe.css , you can use `<code>` for single-line code.
+For **code-style** on Noe.css , you can use `<code>` for single-line code.
 `<pre>` for multiple lines code. `<kbd>` for keyboards inputs.
 `<samp>` for output of a program.
 
-For *button* , `noe-btn, noe-btn-lg, noe-btn-sm` class are available.
+For **button** , `noe-btn, noe-btn-lg, noe-btn-sm` class are available.
 `noe-btn-block` is for block-level button.
 There is also `noe-btn-group, noe-btn-group-lg, noe-btn-group-sm` for button-groups.
 `
@@ -72,7 +72,7 @@ There is also `noe-btn-group, noe-btn-group-lg, noe-btn-group-sm` for button-gro
   <button class='noe-btn'>XML</button>
 </div>
 `
-Since *Padding and Margin* are not set in Noe.css, there are setting classes in Noe.css.
+Since **Padding and Margin** are not set in Noe.css, there are setting classes in Noe.css.
 `noe-padding,noe-padding-small` are for padding.
 `noe-text-center,noe-text-left` and `noe-text-right` for text-align.
 `noe-topleft,noe-topright,noe-topmiddle`and `noe-bottomleft,noe-bottomright,noe-bottommiddle` 
@@ -96,21 +96,22 @@ For **form**, check the example below;
 # **Components**
 
 # *tag*
-`<span class="noe-tag>css</span>"` is tag component.
+
+`<span class="noe-tag>css</span>` is tag component.
 
 # *Card*
+
 `<div class='noe-card noe-success'>
   <div class='noe-card-header'>Header</div>
   <div class='moe-card-body'>
       <p>This is card body</p>
       <button class='noe-btn noe-primary'>Like</button>
   </div>
-</div>
-`
+</div>`
+
 # *Alert*
-`
-  <p class='noe-alert noe-warning'>This is warning for security</p>
-`
+
+`<p class='noe-alert noe-warning'>This is warning for security</p>`
 
 # Since I built this framework for educational purpose, any bug-fixing and contribution is warmly welcome.
 ## Have fun! :smile:
