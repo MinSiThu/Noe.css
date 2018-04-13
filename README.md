@@ -101,13 +101,15 @@ For **form**, check the example below;
 
 # *Card*
 
-`<div class='noe-card noe-success'>
-  <div class='noe-card-header'>Header</div>
-  <div class='moe-card-body'>
+`
+<div class="noe-card noe-success">
+  <div class="noe-card-header">Header</div>
+  <div class="moe-card-body">
       <p>This is card body</p>
-      <button class='noe-btn noe-primary'>Like</button>
+      <button class="noe-btn noe-primary">Like</button>
   </div>
-</div>`
+</div>
+`
 
 # *Alert*
 
